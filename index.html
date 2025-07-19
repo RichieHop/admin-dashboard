@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Embed for Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="sidebar">
+            <div class="dashboard">
+                <img src="images/dashboard.svg">
+                <p>Dashboard</p>
+            </div>
+            <div class="options1">
+                <img src="images/home.svg"><p>Home</p>
+                <img src="images/profile.svg"><p>Profile</p>
+                <img src="images/messages.svg"><p>Messages</p>
+                <img src="images/history.svg"><p>History</p>
+                <img src="images/tasks.svg"><p>Tasks</p>
+                <img src="images/communities.svg"><p>Communities</p>
+            </div>
+            <div class="options2">
+                <img src="images/settings.svg"><p>Settings</p>
+                <img src="images/support.svg"><p>Support</p>
+                <img src="images/privacy.svg"><p>Privacy</p>
+            </div>
+        </div>
+        <div class="grid-container-right">
+            <div class="header">
+                <div class="header-first-row">
+                    <img src="images/search.svg" id="small-icon">
+                    <input type="text" name="search" id="search"/>
+                    <p></p>
+                    <img src="images/alert.svg" id="small-icon">
+                    <img src="images/tom.png" id="medium-icon">
+                    <p>Tom Cat</p>
+                </div>
+                <div class="header-second-row">
+                    <img src="images/tom.png">
+                    <div class="second-row-text">
+                    <small>Hi there, </small id="small-text">
+                    <p>Tom Cat (@tomcat)</p id=medium-text>
+                    </div>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>                
+            </div>
+            <div class="main-content" id="main-content-grid">
+                <div class="projects" id="projects-grid">
+                    <p  id="text">Your Projects</p>
+                    <p></p>
+                    <div class="card">
+                        <h3>Admin Dashboard</h3>
+                        <p>TOP exercise to produce this page.</p>
+                        <p><br>Included an introduction to using Grid, and involved a lot of fiddling about to get the alignment right
+                            and ensuring it all shrank consistently 🙂.</p>
+                        <div class="card-icons">
+                            <img src="images/star.svg">
+                            <img src="images/eye.svg">                        
+                            <img src="images/share.svg" id="share">
+                        </div>
+                    </div>
+                    <div class="card"><h3>Calculator</h3>
+                        <p>TOP exercise to produce a functional calculator.</p>
+                        <p><br>A lot more to this than meets the eye 👁️.</p>
+                        <div class="card-icons">
+                            <img src="images/star.svg">
+                            <img src="images/eye.svg">                        
+                            <img src="images/share.svg" id="share">
+                        </div>                    
+                    </div>
+                    <div class="card"><h3>Etch-a-Sketch</h3>
+                        <p>TOP exercise to mimic an Etch-a-Sketch.</p>
+                        <p><br>Allowed colour selection for pixels, or a random colour to produce a rainbow effect. The cursor could 
+                            be dragged over grid cells to colour them in, or clicked individually. Also allowed grid sizing.</p>
+                        <div class="card-icons">
+                            <img src="images/star.svg">
+                            <img src="images/eye.svg">                        
+                            <img src="images/share.svg" id="share">
+                        </div>                    
+                    </div>
+                    <div class="card"><h3>Sign-up Form</h3>
+                        <p>TOP exercise to produce a sign-up page for a fictitious website.</p>
+                        <p><br><br>Introduced the use of Forms and Input fields. Used Flex for all layout.</p>
+                        <div class="card-icons">
+                            <img src="images/star.svg">
+                            <img src="images/eye.svg">                        
+                            <img src="images/share.svg" id="share">
+                        </div>                    
+                    </div> 
+                    <div class="card"><h3>Rock, Paper, Scissors</h3>
+                        <p>TOP exercise to produce a Rock, Paper, Scissors game.</p>
+                        <p><br><br>Generates a random computer selection for each go, then requests a user selection and displays the result.
+                        First to win 5 rounds wins the game.</p>
+                        <div class="card-icons">
+                            <img src="images/star.svg">
+                            <img src="images/eye.svg">                        
+                            <img src="images/share.svg" id="share">
+                        </div>                    
+                    </div> 
+                    <div class="card"><h3>Landing Page</h3>
+                        <p>TOP exercise to produce a home page for a fictitious website.</p>
+                        <p><br></p>
+                        <div class="card-icons">
+                            <img src="images/star.svg">
+                            <img src="images/eye.svg">                        
+                            <img src="images/share.svg" id="share">
+                        </div>                    
+                    </div> 
+                </div>
+                <div class="right-grid" id="right-grid">
+                    <div class="announcements-header">
+                        <b>Announcements</b>
+                    </div>
+                    <div class="announcements" id="announcements-grid">
+                        <div class="card-right">
+                            <b>Site Maintenance</b>
+                            <p>The site will be closed for routine maintenance from 01:00 to 05:00 on Sunday the 27th of July 2025.</p>
+                            <p id="borderLine"></p>
+                        </div>
+                        <div class="card-right">
+                            <b>Community Share Day</b>
+                            <p>We're hosting a community share day on Saturday the 2nd of August 2025 See <b style="color:blue;">Communities</b> for more details.</p>
+                            <p id="borderLine"></p>
+                        </div>
+                        <div class="card-right">
+                            <b>Updated Privacy Policy</b>
+                            <p>Our new site privacy policy is now available. Please take time to read it (accessible from the <b style="color:blue;">Privacy</b> link on the sidebar).</p>
+                        </div>
+                    </div>
+                    <div class="trending-header">
+                        <b>Trending</b>
+                    </div>
+                    <div class="trending" id="trending-grid">
+                            <img src="images/oggy.png" id="oggy">
+                            <div class="trending-text">
+                            <p><b>@oggy</b></p>
+                            <p>Oggy and the cockroaches</p>
+                            </div>
+                            <img src="images/tom.png" id="tom">
+                            <div class="trending-text">
+                            <p><b>@tomcat</b></p>
+                            <p>Super Cool Project</p>
+                            </div>
+                            <img src="images/smelly-cat.png" id="smelly-cat">
+                            <div class="trending-text">
+                            <p><b>@smelly-cat</b></p>
+                            <p>What is that smell?</p>
+                            </div>
+                            <img src="images/maneki.png" id="maneki">
+                            <div class="trending-text">
+                            <p><b>@maneki</b></p>
+                            <p>Beckoning cat</p>
+                            </div>`
+                    </div>
+                </div>
+                <div class="credit">
+                    <a target="_blank">Cat Images</a> by <a target="_blank" href="https://icons8.com">Icons8</a>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
