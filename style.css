@@ -1,3 +1,19 @@
+/* Use custom scrollbar for border radius, as the default scrollbar blocks it */
+::-webkit-scrollbar {
+    width: 0.75rem;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgrey;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}
+
 html{
   font-size: 1.5vmin;
 }
@@ -211,13 +227,16 @@ body{
 
 .card{
   display:grid;
-  grid-template: 3em 1rem/ 21.5rem;
-  border: 1px solid black;
+  grid-template: 2.5em 1rem/ 20rem;
+  /* border: 1px solid black; */
   margin: 1rem;
   padding-left: 1rem;
   background-color: white;
-  box-shadow: -0.5rem 0 0 rgb(236, 178, 70);
+  box-shadow: -0.5rem 0 0 0 rgb(236, 178, 70), 4px 4px 4px rgb(0,0,0,0.1);
   border-radius: 10px;
+  /* Using clip-path instead of border-radius prevents loss of rounding if scroll bar is active, but loses box-shadow! */
+  /* clip-path: inset(0 round 10px);*/
+  overflow: auto;
 }
 
 .card h3{
@@ -226,12 +245,12 @@ body{
 
 .card p{
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 0.1rem;
 }
 
 .card-icons{
   display:grid;
-  grid-template: 2.75rem/ 2.5rem 2.5rem 2.5rem;
+  grid-template: 3rem/ 2.5rem 2.5rem 2.5rem;
   margin-top: auto;
   margin-bottom: 0px;
   justify-self: right;
@@ -273,10 +292,10 @@ body{
   background-color: rgb(230, 233, 236);
   padding-left: 1rem;
   padding-top: 1rem;
-  border: 1px solid black;
   border-radius: 10px;
   background-color: white;
   margin-top: 1rem;
+  box-shadow: 4px 4px 4px rgb(0,0,0,0.1);
 }
 
 .announcements p{
@@ -306,11 +325,11 @@ body{
   background-color: rgb(230, 233, 236);
   padding-left: 1rem;
   padding-top: 1rem;
-  border: 1px solid black;
   border-radius: 10px;
   background-color: white;
   align-items: center;
   margin-top: 1.9rem;
+  box-shadow: 4px 4px 4px rgb(0,0,0,0.1);
 }
 
 .trending img{
